@@ -2,11 +2,9 @@
 
 ## Overview
 
-Explain the purpose of this analysis.
+The purpose of this analysis is to help Alphabet Soup create a neural network model to determine which charities that seek funding will be successful. The model will be built on historical data of  34,000+ organizations that have received funding over the years and their success status.
 
 ## Results
-
-Using bulleted lists and images to support your answers, address the following questions.
 
 ### Data Preprocessing
 
@@ -14,7 +12,7 @@ Using bulleted lists and images to support your answers, address the following q
     - The target data for this model is the column 'IS_SUCCESSFUL', which indicates whether or not a donation was used effectively or not.
 
 - What variable(s) are considered to be the features for your model?
-    - The feature data for this model
+    - The feature data for this model are the columns 'APPLICATION_TYPE', 'AFFILIATION', 'CLASSIFICATION', 'USE_CASE', 'ORGANIZATION', 'INCOME_AMT', and 'SPECIAL_CONSIDERATIONS'.
 
 - What variable(s) are neither targets nor features, and should be removed from the input data?
     - The target data for this model is the columns 'EIN' and 'NAME'; both of which were dropped from the analysis.
@@ -35,15 +33,18 @@ Using bulleted lists and images to support your answers, address the following q
     ![Del3_Opt3_Summary](https://github.com/krockway/Neural_Network_Charity_Analysis/blob/main/Images/Del3_Opt3_Summary.png)
 
 - Were you able to achieve the target model performance?
-    - My original model delivered an accuracy of XXX and a loss of XXX.
+    - My original model delivered an accuracy of 73.1% and a loss of 55.5%.
     ![Del2](https://github.com/krockway/Neural_Network_Charity_Analysis/blob/main/Images/Del2.png)
-    - The first attempt, with added nodes, delivered an accuracy of XXX and a loss of XXX.
+    - The first attempt, with added nodes, delivered an accuracy of 73.3% and a loss of 57.3%.
     ![Del3_Opt1](https://github.com/krockway/Neural_Network_Charity_Analysis/blob/main/Images/Del3_Opt1.png)
-    - The second attempt, with added nodes & layers, delivered an accuracy of XXX and a loss of XXX.
+    - The second attempt, with added nodes & layers, delivered an accuracy of 72.6% and a loss of 57.1%.
     ![Del3_Opt2](https://github.com/krockway/Neural_Network_Charity_Analysis/blob/main/Images/Del3_Opt2.png)
-    - The third attempt, with the original nodes and layers, but added epochs, delivered an accuracy of XXX and a loss of XXX.
+    - The third attempt, with the original nodes and layers, but added epochs, delivered an accuracy of 73.2% and a loss of 57.6%.
     ![Del3_Opt3](https://github.com/krockway/Neural_Network_Charity_Analysis/blob/main/Images/Del3_Opt3.png)
+    - Overall, none of my attempts at optimization significantly improved the accuracy of the model, nor did they reach the targeted 75% accuracy threshold.
 
 ## Summary
- Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
 
+ Each of my deep learning models were able to reach ~73% accuracy. If I were to continue this process and goal of improving accuracy, I would run another model to combine the additional nodes, layers and number of epochs to see if the combination of all three factors improved the results.
+
+ I would also do further research to bring down the loss amount, which is quite high.
